@@ -8,13 +8,9 @@ Welcome to the frontend repository for Cannes, an e-commerce application built a
 
 Cannes is a feature-rich e-commerce app designed to cater to the needs of modern shoppers. With a sleek and intuitive interface, our application offers a wide range of products from various categories, allowing users to browse, search, and purchase items with ease. The app also incorporates essential features like user authentication, cart management, and order tracking to enhance the overall shopping journey.
 
-The frontend repository works in tandem with the [Cannes Backend Repository](https://github.com/Sarthak-ONS/cannes-bk.git), which houses the server-side code responsible for handling data, integrating with external APIs, and managing database operations.
-
-Project Explanatory Video
-To get a better understanding of the Cannes e-commerce app and its features, please watch our Project Explanatory Video.
+The frontend repository works in tandem  houses the server-side code responsible for handling data, integrating with external APIs, and managing database operations.
 
 
-[![Project Explanatory Video](https://img.youtube.com/vi/RSL-HrNRyNQ/0.jpg)](https://www.youtube.com/watch?v=RSL-HrNRyNQ)
 
 ## Key Features
 
@@ -31,13 +27,13 @@ To get a better understanding of the Cannes e-commerce app and its features, ple
 - **Programming Languages**: HTML, CSS, JavaScript
 - **Frontend Framework**: React.Js
 - **State Management**: React Context API, react-router-dom
-- **APIs**: Our frontend communicates with the [Cannes Backend API](https://github.com/Sarthak-ONS/cannes-bk.git) to fetch product data, process user authentication, and manage orders.
+- **APIs**: Our frontend communicates with the [Cannes Backend API] to fetch product data, process user authentication, and manage orders.
 
 ## Installation and Setup
 
 To set up the Cannes frontend app locally, follow the steps below:
 
-1. Clone the [Cannes Backend Repository](https://github.com/Sarthak-ONS/cannes-bk.git) and follow the instructions provided in its README to set up the backend server.
+1. Clone the [Cannes Backend Repository] and follow the instructions provided in its README to set up the backend server.
 
 2. Clone this frontend repository to your local machine:
 
