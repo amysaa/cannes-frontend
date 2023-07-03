@@ -1,0 +1,30 @@
+.brands {
+  margin: 6rem 0;
+}
+
+.brand__heading {
+  font-size: 3rem;
+  color: var(--primary-text-color);
+}
+
+.brands__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Brand__ImageCard {
+  height: 4rem;
+  /* width: 4rem; */
+}
+
+.Brand__ImageCard img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.Brand__ImageCard img:hover{
+    filter: grayscale(0%);
+}

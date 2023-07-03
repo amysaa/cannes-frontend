@@ -1,0 +1,147 @@
+.Product__card {
+  height: 15rem;
+  width: 12rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 4px;
+  overflow: hidden;
+
+  background-color: #fafbfb;
+  cursor: pointer;
+
+  margin: 0.25rem;
+  border: 1px solid rgb(211, 209, 209);
+}
+
+.Product__card .add-to-cart {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  opacity: 0;
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: var(--primary-text-color);
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  z-index: 20;
+}
+
+.Product__card:hover .add-to-cart {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.Product__card-img {
+  height: 70%;
+}
+
+.Product__card img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Product__card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.25rem;
+}
+
+.Product__card-btn {
+  width: 30%;
+}
+
+.Product__card-brand {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.Product__card-title {
+  font-size: 14px;
+  line-height: 1;
+  color: #535766;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.Product__card-prices {
+  display: flex;
+  font-size: 0.875rem;
+  gap: 0.25rem;
+}
+
+.Product__card-prices .Product__card-prices_price1 {
+  font-weight: bold;
+}
+.Product__card-prices .Product__card-prices_price2 {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  color: red;
+}
+
+.cart-btn {
+  padding: 0.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.25rem;
+}
+
+.Product__card-sales-tag {
+  display: inline-block;
+
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  padding: 0.25rem 0.8rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.Product__card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  animation: backdropAppear 0.3s ease forwards;
+}
+
+@media (max-width: 650px) {
+  .Product__card {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@keyframes backdropAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

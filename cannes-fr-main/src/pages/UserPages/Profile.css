@@ -1,0 +1,65 @@
+.ProfilePage {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: var(--primary-text-color);
+
+  --custom-box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ProfilePage-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+.ProfilePage-heading span {
+  color: green;
+  font-size: 1rem;
+}
+
+.ProfilePage-name {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.ProfilePage-email {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Address-form {
+  margin: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.Address-form input {
+  max-width: 400px;
+  min-width: 300px;
+  outline: none;
+  border: 1px solid rgb(144, 141, 141);
+  margin: 0.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: var(--custom-box-shadow);
+}
+
+.Address-form button {
+  margin: 0.25rem;
+  background-color: var(--primary-text-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+
+  max-width: 400px;
+  min-width: 300px;
+}
+
+@media (min-width: 650px) {
+}

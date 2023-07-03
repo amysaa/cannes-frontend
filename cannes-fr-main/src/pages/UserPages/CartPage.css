@@ -1,0 +1,233 @@
+.Cartpage-wrapper {
+  width: 100%;
+  padding-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Cartpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Cartpage__heading {
+  font-size: 3rem;
+  text-align: center;
+}
+.CartPage-Empty {
+  padding-top: 60px;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.CartPage-Empty p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Cartpage-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cartpage-items ul {
+  list-style: none;
+}
+
+.Cartpage-heading__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+.Cartpage-heading__title span {
+  font-weight: 500;
+}
+.Cartpage-heading__title-timeline {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  color: green;
+}
+
+.CartProductCard {
+  /* max-width: 500px;
+  min-width: 500px; */
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: #edf2f8;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.25rem;
+  margin: 2rem 0;
+  overflow: hidden;
+
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.CartProductCard p {
+  background-color: transparent;
+}
+
+.CartProductCard .CartProductCard-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+
+  max-width: 70%;
+}
+
+.CartProductCard .CartProductCard-image img {
+  height: 3rem;
+  width: 3rem;
+}
+.CartProductCard .CartProductCard-image {
+  flex: 0.75;
+}
+
+.CartProductCard .CartProductCard-content p {
+  background-color: #edf2f8;
+  white-space: nowrap;
+  text-overflow: clip;
+  overflow: hidden;
+  max-lines: 1;
+  flex: 0.75;
+}
+
+.CartProductCard-qty {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+}
+
+.CartProductCard-qty {
+  display: flex;
+}
+
+.CartProductCard-qty .icon {
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 50%;
+}
+
+.checkout-container {
+  /* z-index: 1000; */
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  border-top: 8px;
+  position: fixed;
+  right: 0;
+  width: 25%;
+  height: calc(100%);
+  padding: 0.75rem;
+  bottom: 0;
+  flex: 0.5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  border-left: 2px solid orange;
+}
+.checkout-container form {
+  width: 100%;
+}
+
+.checkout-container .checkout-btn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--primary-text-color);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.discount-form {
+  background-color: blanchedalmond;
+}
+
+.discount-form form,
+.Cartpage-wrapper form,
+.discount-form p {
+  background-color: transparent;
+}
+
+.discount-form .input-box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid orange;
+}
+
+.input-box {
+  background-color: transparent;
+}
+.input-box div {
+  background-color: transparent;
+}
+.input-box div p {
+  background-color: transparent;
+}
+
+.discount-form input {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 0.25rem;
+  font-size: 0.875rem;
+  width: 70%;
+  outline: none;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.discount-form button {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (max-width: 650px) {
+  .Cartpage-wrapper {
+    flex-direction: column;
+  }
+  .Cartpage-items {
+    margin: 2rem 0;
+  }
+
+  .CartProductCard {
+    min-width: none;
+    max-width: none;
+    margin: 0 0.5rem;
+  }
+  .checkout-container {
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    height: fit-content;
+    bottom: 0;
+    border: 4px solid orange;
+  }
+  .checkout-btn {
+    background-color: orange;
+  }
+}

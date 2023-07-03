@@ -1,0 +1,62 @@
+.signup {
+  display: flex;
+  height: 100vh;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  /* margin: 2rem; */
+}
+
+.signup__image {
+  background: url("https://images.pexels.com/photos/4068314/pexels-photo-4068314.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60%;
+  flex: 0.5;
+
+  display: flex;
+  color: white;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  align-items: flex-end;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  border-radius: 10px;
+}
+
+.login-link {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.error-msg {
+  border: 1px solid red;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-left: 10px solid red;
+}
+
+.success-msg {
+  border: 1px solid green;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-left: 10px solid green;
+}
+
+@media (max-width: 650px) {
+  .signup {
+    padding-top: 15rem;
+  }
+  .signup__image {
+    display: none;
+  }
+}

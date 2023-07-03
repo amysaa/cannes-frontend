@@ -1,0 +1,241 @@
+.HomePage {
+  margin: 0 5rem;
+  padding-top: 8rem;
+  margin-bottom: 3rem;
+  /* height: fit-content; */
+  width: auto;
+}
+
+.HomePage-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HomePage-content .HomePage-content-h1 {
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.HomePage-content .HomePage-content-h2 {
+  color: grey;
+  background-color: #edf2f8;
+  font-size: 1.25rem;
+  font-weight: 300;
+
+  border-left: 5px solid var(--primary-text-color);
+  border-radius: 4px;
+  padding: 1.5rem 1.25rem;
+}
+
+.HomePage-features ul {
+  margin: 0.125rem;
+  margin-top: 4rem;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.HomePage-features ul li {
+  flex: 0.25;
+}
+
+.feature-icon {
+  padding: 0.25rem;
+  background-color: #edf2f8;
+  color: var(--primary-text-color);
+  border-radius: 8px;
+}
+
+.featured__products {
+  margin: 2rem 0;
+  /* margin-bottom: 5rem; */
+}
+
+.featured__products-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.featured__products ul {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.Discount__Offer {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Discount__Offer .Discount__Offer-image {
+  flex: 0.5;
+}
+
+.Discount__Offer .Discount__Offer-image img {
+  height: 100%;
+  flex: 0.5;
+}
+
+.Discount__Offer .Discount__Offer-content {
+  width: 100%;
+  background-color: var(--primary-text-color);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.Discount__Offer .Discount__Offer-content .Discount__Offer-content__heading {
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.Discount__Offer
+  .Discount__Offer-content
+  .Discount__Offer-content__description {
+  background-color: transparent;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.Discount__Offer .Discount__Offer-content .Discount__Offer-content__cta {
+  background-color: transparent;
+}
+
+.Discount__Offer .Discount__Offer-content .Discount__Offer-content__cta button {
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  font-size: 0.9rem;
+}
+
+.nwsltrSubscription {
+  margin: 3rem 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.nwsltrSubscription .nwsltrSubscription__heading {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.nwsltrSubscription .nwsltrSubscription__subheading {
+  font-size: 1.25rem;
+  padding: 1rem;
+  color: grey;
+}
+
+.nwsltrSubscription__actions {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nwsltrSubscription__actions .nwsltrSubscription__actions-input input {
+  outline: none;
+  border: none;
+  background-color: #edf2f8;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.nwsltrSubscription__actions .nwsltrSubscription__actions-input button {
+  background-color: var(--primary-text-color);
+  color: white;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+
+.nwsltrSubscription__actions
+  .nwsltrSubscription__actions-input
+  input::placeholder {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 650px) {
+  .HomePage {
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+  }
+
+  .HomePage-content {
+    flex-direction: column;
+  }
+
+  .HomePage-features ul {
+    margin: 1rem;
+  }
+
+  .Discount__Offer {
+    flex-direction: column;
+    gap: 0;
+    margin: 0.125rem;
+  }
+
+  .Discount__Offer .Discount__Offer-image {
+    width: 100%;
+  }
+
+  .nwsltrSubscription__actions .nwsltrSubscription__actions-input input {
+    border-radius: 10px;
+  }
+  .nwsltrSubscription__actions .nwsltrSubscription__actions-input button {
+    border-radius: 10px;
+  }
+
+  .Discount__Offer .Discount__Offer-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .Discount__Offer .Discount__Offer-image {
+    display: none;
+  }
+
+  .Discount__Offer
+    .Discount__Offer-content
+    .Discount__Offer-content__description {
+    font-size: 1.5rem;
+
+    margin: 0.25rem;
+  }
+
+  .Discount__Offer
+    .Discount__Offer-content
+    .Discount__Offer-content__cta
+    button {
+    margin: 0.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
