@@ -67,6 +67,6 @@ To set up the Cannes frontend app locally, follow the steps below:
 
 ## Feedback and Support
 
-If you have any questions, suggestions, or need support regarding the Cannes app or the full stack project, please reach out at sarthak@sarthakag.dev
+If you have any questions, suggestions, or need support regarding the Cannes app or the full stack project, please reach out at amishaverma2805@gmail.com
 
 Thank you for your interest in Cannes! Happy shopping! 🛍️
